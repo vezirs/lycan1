@@ -5,10 +5,27 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
-    open: true
+    open: true,
   },
   build: {
     outDir: 'dist',
-    sourcemap: false
-  }
+    sourcemap: false,
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+      },
+    },
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom'],
+          'router': ['react-router-dom'],
+        },
+      },
+    },
+  },
+  define: {
+    'process.env.VITE_VERSION': JSON.stringify(process.env.npm_package_version),
+  },
 });

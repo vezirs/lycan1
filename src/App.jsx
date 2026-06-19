@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Discover from './pages/Discover';
@@ -16,6 +17,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-dark">
         <Navbar />
+        {isLoggedIn && <Sidebar />}
         <main className={isLoggedIn ? "ml-64" : ""}>
           <Routes>
             <Route path="/" element={<Home />} />

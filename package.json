@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Link in bio, real inbox, and live chat platform",
   "type": "module",
+  "author": "Vezir",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -21,6 +23,25 @@
     "vite": "^5.0.0",
     "tailwindcss": "^3.4.0",
     "postcss": "^8.4.0",
-    "autoprefixer": "^10.4.0"
-  }
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.52.0"
+  },
+  "keywords": [
+    "lycan",
+    "link-in-bio",
+    "inbox",
+    "chat",
+    "social",
+    "profile",
+    "react",
+    "tailwind"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vezirs/lycan1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vezirs/lycan1/issues"
+  },
+  "homepage": "https://lycan.gg"
 }

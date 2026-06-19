@@ -1,0 +1,12 @@
+// Cloudflare Pages configuration (optional)
+// Place in root as wrangler.toml for advanced features
+
+name = "lycan"
+type = "javascript"
+account_id = ""
+workers_dev = true
+
+[env.production]
+name = "lycan"
+route = "example.com/*"
+zone_id = ""
